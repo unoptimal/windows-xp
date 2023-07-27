@@ -25,7 +25,7 @@
 
 <div bind:this={windowElement} class="window" style="width: 450px; position: absolute; top: {top}; left: {left}; background: white">
     <div class="title-bar">
-        <div class="title-bar-text"><img src="windows-xp/src/assets/projects.ico" style="width: 16px; vertical-align: middle;"/>{title}.html</div>
+        <div class="title-bar-text"><img src="/src/assets/projects.ico" style="width: 16px; vertical-align: middle;"/>{title}.html</div>
         <div class="title-bar-controls">
           <button aria-label="Minimize" on:click={close}></button>
           <button aria-label="Maximize"></button>
@@ -35,11 +35,11 @@
     <div class="window-body">
             <h3>{title}</h3>
             {#if image}
-              <img class="project-image" src="windows-xp/src/assets/projects/{image}" alt="">
+              <img class="project-image" src="/src/assets/projects/{image}" alt="">
             {/if}
             {#if video}
             <video class="project-video" autoplay loop muted playsinline>
-              <source src="windows-xp/src/assets/projects/{video}" type="video/mp4">
+              <source src="/src/assets/projects/{video}" type="video/mp4">
               Your browser does not support the video tag.
             </video>
             {/if}
