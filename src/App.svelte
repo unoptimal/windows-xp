@@ -16,7 +16,7 @@
   }
 
   let audio;
-  let clickAudio = new Audio("click.mp3");
+  let clickAudio = new Audio("/click.mp3");
   let isPlaying = false;
   function handleClick() {
     if (clickAudio) {
@@ -30,13 +30,15 @@
   }
 
   onMount(() => {
-      window.addEventListener('click', handleClick);
+    window.addEventListener('click', handleClick);
 
-      audio = new Audio("ambient.mp3");
+audio = new Audio("/ambient.mp3");
+audio.loop = true; 
 
-      audio.addEventListener('ended', () => {
-          audio.play();
-      });
+if (!isPlaying && audio) {
+    audio.play();
+    isPlaying = true;
+}
 
       openWindow('about');
       openWindow('projects');
@@ -68,7 +70,7 @@
       </div>
     
       <div class="right-logo">
-        <a href='https://unoptimal.com/' target='_blank'><img src="src/assets/logo.png" alt=""></a>
+        <a href='https://unoptimal.com/' target='_blank'><img src="/logo.png" alt=""></a>
         <p>go to main site!</p>
       </div>
 
