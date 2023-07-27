@@ -50,19 +50,19 @@
     <main>
       <div class="left-icons">
         <div class="icon icon1">
-          <img src="/src/assets/notepad.png" alt="About" on:dblclick={() => openWindow('about')}>
+          <img src="/notepad.png" alt="About" on:dblclick={() => openWindow('about')}>
           <p>about.txt</p>
         </div>
         <div class="icon icon2">
-          <img src="/src/assets/projects.png" alt="Projects Icon" on:dblclick={() => openWindow('projects')}>
+          <img src="/projects.png" alt="Projects Icon" on:dblclick={() => openWindow('projects')}>
           <p>Selected Projects</p>
         </div>
         <div class="icon icon3">
-          <img src="/src/assets/videos.png" alt="Videos Icon" on:dblclick={() => openWindow('videos')}>
+          <img src="s/videos.png" alt="Videos Icon" on:dblclick={() => openWindow('videos')}>
           <p>Selected Videos</p>
         </div>
         <div class="icon icon4">
-          <img src="/src/assets/essays.png" alt="Videos Icon" on:dblclick={() => openWindow('essays')}>
+          <img src="/essays.png" alt="Videos Icon" on:dblclick={() => openWindow('essays')}>
           <p>Selected Essays</p>
         </div>
       </div>
