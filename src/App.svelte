@@ -58,7 +58,7 @@
           <p>Selected Projects</p>
         </div>
         <div class="icon icon3">
-          <img src="s/videos.png" alt="Videos Icon" on:dblclick={() => openWindow('videos')}>
+          <img src="/videos.png" alt="Videos Icon" on:dblclick={() => openWindow('videos')}>
           <p>Selected Videos</p>
         </div>
         <div class="icon icon4">
