@@ -47,7 +47,7 @@
   
   <div bind:this={windowElement} class="window" style="position: absolute; top: {top}; left: {left}; width:640px; background: white;">
     <div class="title-bar">
-      <div class="title-bar-text"><img src="/essays.ico" style="width: 16px; vertical-align: middle;"/>Selected Essays</div>
+      <div class="title-bar-text"><img src="windows-xp/src/assets/essays.ico" style="width: 16px; vertical-align: middle;"/>Selected Essays</div>
       <div class="title-bar-controls">
         <button aria-label="Minimize" on:click={() => close(id)}></button>
         <button aria-label="Maximize" ></button>

@@ -32,8 +32,8 @@
   
   <div bind:this={windowElement} class="window" style="position: absolute; top: {top}; left: {left}; background: white">
     <div class="title-bar">
-        <div class="title-bar-text">Document Viewer</div>
-        <div class="title-bar-controls">
+      <div class="title-bar-text"><img src="windows-xp/src/assets/essays.ico" style="width: 16px; vertical-align: middle;"/>Document Viewer</div>
+      <div class="title-bar-controls">
           <button aria-label="Minimize" on:click={close}></button>
           <button aria-label="Maximize"></button>
           <button aria-label="Close" on:click={close}></button>

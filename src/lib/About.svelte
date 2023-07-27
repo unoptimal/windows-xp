@@ -21,7 +21,7 @@
 
 <div bind:this={windowElement} class="window" style="width: 400px; position: absolute; top: {top}; left: {left}; background: white">
   <div class="title-bar">
-      <div class="title-bar-text"><img src="/notepad.png" style="width: 16px; vertical-align: middle;" /> about.txt - Notepad</div>
+      <div class="title-bar-text"><img src="windows-xp/src/assets/notepad.png" style="width: 16px; vertical-align: middle;" /> about.txt - Notepad</div>
       <div class="title-bar-controls">
         <button aria-label="Minimize" on:click={close}></button>
         <button aria-label="Maximize"></button>

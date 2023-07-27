@@ -9,6 +9,7 @@
   import { createWindow, closeWindow } from './helpers/windows.js'; 
   import Essays from './lib/Essays.svelte';
   import EssaysEmbed from './lib/EssaysEmbed.svelte';
+  
 
   function openWindow(type, props = {}) {
     createWindow(type, props);
@@ -42,31 +43,32 @@
       openWindow('videos');
       openWindow('essays');
   });
+
 </script>
 
 
     <main>
       <div class="left-icons">
         <div class="icon icon1">
-          <img src="../notepad.png" alt="About" on:dblclick={() => openWindow('about')}>
+          <img src="windows-xp/src/assets/notepad.png" alt="About" on:dblclick={() => openWindow('about')}>
           <p>about.txt</p>
         </div>
         <div class="icon icon2">
-          <img src="../projects.png" alt="Projects Icon" on:dblclick={() => openWindow('projects')}>
+          <img src="windows-xp/src/assets/projects.png" alt="Projects Icon" on:dblclick={() => openWindow('projects')}>
           <p>Selected Projects</p>
         </div>
         <div class="icon icon3">
-          <img src="../videos.png" alt="Videos Icon" on:dblclick={() => openWindow('videos')}>
+          <img src="windows-xp/src/assets/videos.png" alt="Videos Icon" on:dblclick={() => openWindow('videos')}>
           <p>Selected Videos</p>
         </div>
         <div class="icon icon4">
-          <img src="../essays.png" alt="Videos Icon" on:dblclick={() => openWindow('essays')}>
+          <img src="windows-xp/src/assets/essays.png" alt="Videos Icon" on:dblclick={() => openWindow('essays')}>
           <p>Selected Essays</p>
         </div>
       </div>
     
       <div class="right-logo">
-        <a href='https://unoptimal.com/' target='_blank'><img src="../logo.png" alt=""></a>
+        <a href='https://unoptimal.com/' target='_blank'><img src="windows-xp/src/assets/logo.png" alt=""></a>
         <p>go to main site!</p>
       </div>
 

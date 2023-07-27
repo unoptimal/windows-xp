@@ -22,7 +22,7 @@
   let projects = [
     {id: 'proj00', title:'ALL PROJECTS', description:'N/A', 'type': 'N/A', 'dateModified': 'N/A'},
     { id: 'proj0', title: 'Snail is Inevitable', link:'https://chrome.google.com/webstore/detail/snail-is-inevitable/nfeomodjclpbblbenogffoaifdkdnnoh', image:'/snail/snail.PNG', 'type': 'chrome extension', 'dateModified': '7/14/2023', description:'A chrome extension that emulates the snail hypothetical. But instead of your life, the snail goes after your cursor.'},
-    { id: 'proj1', title: 'Touching Grass', video:'/grass/grass.mp4','type': 'plant + arduino', 'dateModified': '7/5/2023', description:'This is how I touch grass.',},
+    { id: 'proj1', title: 'Touching Grass', video:'grass/grass.mp4','type': 'plant + arduino', 'dateModified': '7/5/2023', description:'This is how I touch grass.',},
     { id: 'proj2', title: 'Experimental Email Signatures', link:'https://chrome.google.com/webstore/detail/experimental-email-signat/cjbhjgbckhmebddcogijipjmbekkmkbg', image:'/email/email.PNG', 'type': 'chrome extension', 'dateModified': '7/3/2023', description:'Inspired by a tweet of funny email signatures, I made a chrome extension that lets you input a random signature into your emails.',},
     {id: 'proj3', title:'Salted Circus Cashews', link:'https://www.instagram.com/p/Ct-LxdVpGxQ/', image:'/cashews/circus cashews.png', type: 'pringles + photoshop', 'dateModified': '6/27/2023', description:'I made the circus cashews can from the introduction of Someone Who Will Love You in All Your Damaged Glory and slapped it onto a Pringles can.'},
     {id: 'proj4', title:'The Onion Test', 'type': 'data scraping + game', image:'/onion/onion.PNG', link:'https://unoptimal.github.io/the-onion-test/', dateModified: '6/5/2023', description:`A little game that asks you two questions: 'Was this headline written by The Onion?'' and: 'How sure are you about that?'`},
@@ -42,7 +42,7 @@
 
 <div bind:this={windowElement} class="window" style="width: 550px; position: absolute; top: {top}; left: {left}; background: white">
   <div class="title-bar">
-    <div class="title-bar-text"><img src="/projects.ico" style="width: 16px; vertical-align: middle;" />Selected Projects</div>
+    <div class="title-bar-text"><img src="windows-xp/src/assets/projects.ico" style="width: 16px; vertical-align: middle;" />Selected Projects</div>
     <div class="title-bar-controls">
       <button aria-label="Minimize" on:click={() => close(id)}></button>
       <button aria-label="Maximize"></button>

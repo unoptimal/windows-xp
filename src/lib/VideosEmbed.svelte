@@ -32,8 +32,8 @@
 
 <div bind:this={windowElement} class="window" style="position: absolute; top: {top}; left: {left}; background: white">
   <div class="title-bar">
-      <div class="title-bar-text">Video Player</div>
-      <div class="title-bar-controls">
+    <div class="title-bar-text"><img src="windows-xp/src/assets/video.ico" style="width: 16px; vertical-align: middle;"/>Video Player</div>
+    <div class="title-bar-controls">
         <button aria-label="Minimize" on:click={close}></button>
         <button aria-label="Maximize"></button>
         <button aria-label="Close" on:click={close}></button>
