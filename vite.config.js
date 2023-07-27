@@ -1,9 +1,7 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte()],
-  base: '/windows-xp/',
-  publicDir: 'src/assets',
+  base: '/windows-xp/'
 })
